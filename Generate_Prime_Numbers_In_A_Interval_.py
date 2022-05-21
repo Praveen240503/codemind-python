@@ -1,12 +1,12 @@
-def prime(n):
-    if n<2:
-        return False
-    for i in range(2,n):
-        if n%i==0:
-            return False
-    return True
-x=int(input())
-y=int(input())
-for i in range(x,y+1):
-    if prime(i):
-        print(i)
+a = int (input())
+b = int (input())
+s=0
+for i in range(a,b+1):
+    c=0
+    for j in range(2,i):
+        if i%j==0:
+            c=1
+            break
+    if c==0:
+        if i!=1:
+            print(i)
