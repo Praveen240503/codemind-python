@@ -1,14 +1,14 @@
-def check_palindrome(v):
+def palin(v):
     if len(v) < 1:
         return True
     else:
         if v[0] == v[-1]:
-            return check_palindrome(v[1:-1])
+            return palin(v[1:-1])
         else:
             return False
 
-var = input()
-if(check_palindrome(var)):
+a = input()
+if(palin(a)):
     print("True")
 else:
     print("False")
