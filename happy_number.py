@@ -1,5 +1,4 @@
 import math
-
 def digitsSquareSum(Number):
     Sum = rem = 0
     while Number > 0:
