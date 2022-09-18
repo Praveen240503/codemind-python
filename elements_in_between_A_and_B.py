@@ -8,5 +8,4 @@ for i in x:
 if len(c)==0:
     print('-1')
 else:
-    for j in c:
-        print(j,end=' ')
+    print(*c)
