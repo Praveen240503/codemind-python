@@ -5,12 +5,11 @@ def prime(n):
         if n%i==0:
             return 0
     return 1
-n=int(input())
-a=list(map(int,input().split()))
-x=int(input())
-c=0
-for i in a:
-    if prime(i):
-        if i<=x:
-            c+=1
-print(c)
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
+d=0
+for i in range(a):
+    if prime(b[i]) and b[i]<=c:
+        d+=1
+print(d)
