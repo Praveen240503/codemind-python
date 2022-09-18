@@ -5,13 +5,12 @@ def prime(n):
         if n%i==0:
             return 0
     return 1
-n=int(input())
-a=list(map(int,input().split()))
-c=0
-d=0
-for i in a:
-    if prime(i):
-        c+=i
-        d+=1
-x=c/d
-print("%.2f"%x)
+a=int(input())
+b=list(map(int,input().split()))
+s,c,d=0,0,0
+for i in range(a):
+    if prime(b[i]):
+        s+=b[i]
+        c+=1
+d=s/c
+print("%.2f"%d)
