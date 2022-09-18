@@ -1,8 +1,8 @@
-x=int(input())
-a=list(map(int,input().split()))
-n=set(a)
-c=0
-for i in n:
+a=int(input())
+b=list(map(int,input().split()))
+c=set(b)
+d=0
+for i in c:
     if i%2!=0:
-        c+=i
-print(c)
+        d+=i
+print(d)
