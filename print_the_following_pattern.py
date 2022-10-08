@@ -1,10 +1,10 @@
-n=int(input())
-a,b=1,1
-for i in range(n):
-    for j in range(n-1,i,-1):
-        print(" ",end='')
-    for j in range(1,a+1):
-        print(abs(j-b),end="")
+hrow=int(input())
+for i in range(hrow,0,-1):
+    for j in range(1,i):
+        print(' ',end="")
+    for k in range(0,hrow):
+        if(i==1 or i==hrow or k==0 or k==hrow-1):
+            print('*',end="")
+        else:
+            print(' ',end="")
     print()
-    a+=2
-    b+=1
